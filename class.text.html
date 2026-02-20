@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>online feedback form</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+        <label for="">Name:</label>
+        <input type="text" placeholder="enter your name">
+        <br><br>
+
+        <label for="">Mobile:</label>
+        <input type="tel" placeholder="enter your mobile" minlength="10" maxlength="10">
+        <br><br>
+
+        <label for="">e-mail: </label>
+        <input type="email" placeholder="enter your email"><br>
+
+        <p>Ratings:
+        <input type="radio" name="stars" id="star5" value="5" />
+        <label for="star5">1</label>
+        <input type="radio" name="stars" id="star4" value="4" />
+        <label for="star4">2</label>
+        <input type="radio" name="stars" id="star4" value="4" />
+        <label for="star4">3</label>
+        <input type="radio" name="stars" id="star4" value="4" />
+        <label for="star4">4</label>
+        <input type="radio" name="stars" id="star4" value="4" />
+        <label for="star4">5</label>
+        </p>
+        </form>
+        
+        <label for="gender">Gender: </label>
+        <input type="radio" name="gender" checked>male 
+        <input type="radio" name="gender"> female
+        <input type="radio" name="gender"> other
+
+        <br><br>
+        <label for="">age: </label>
+        <input type="number" name="" id="">
+        <br><br>
+
+        <label for="DDJ">Date: </label>
+        <input type="date" name="" id="">
+        <br><br>
+
+        <label for="">branch</label>
+        <input list="branch">
+        <datalist id="branch">
+            <option value="cse"></option>
+            <option value="cse-ds"></option>
+            <option value="cse-aiml"></option>
+        </datalist><br><br>
+
+        <label for="">city</label>
+        <select name="">
+            <option value="">GZB</option>
+            <option value="">DEL</option>
+            <option value="">NOIDA</option>
+            <option value="">GNOIDA</option>
+        </select>
+        <br><br>
+
+        <label for="">REVIEW</label>
+        <textarea name="" id="" cols="50" rows="15"></textarea><br><br>
+
+        <button>verify me</button>
+        <input type="reset" value="reset form">
+        <input type="submit" value="submit form">
+</fieldset>
+</form>
+</body>
+</html>
