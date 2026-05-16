@@ -24,27 +24,26 @@ document.getElementById("dept").value = "";
 function displayEmployees() {
      let output = "<h3>All Employees</h3>"; 
      employees.forEach(emp => {
-     output += 
+     output += `
      Name: ${emp.name} | 
      ID: ${emp.id} | 
      Salary: ₹${emp.salary} | 
      Dept: ${emp.department} <br>
-    ;
+    `;
 }); 
 document.getElementById("output").innerHTML = output;
 } 
 function filterSalary() {
-    let filtered employees.filter(emp => emp.salary> 50000); 
+    let filtered = employees.filter(emp => emp.salary> 50000); 
     let output = "<h3>Employees with Salary > ₹50,000</h3>"; 
     filtered.forEach(emp => { 
-        output += 
+        output += `
         Name: ${emp.name} | 
             Salary: ${emp.salary} <br>
-            ;
+           `;
 });
 document.getElementById("output").innerHTML = output; 
 }
-
 function totalSalary() { 
     let total = employees.reduce((sum, emp) => sum + emp.salary, 0); 
     document.getElementById("output").innerHTML = 
